@@ -10,4 +10,4 @@ problems with splitting JS files
 ------------------------------------
 
 - how the files are to be loaded? in which order? based on dependencies on different files. This order needs to be maintained every time our app runs.
-- Also loading all these files to a browser will have negative perf impact, as all files have to be downloaded. especially in mobile apps.
+- Also loading all these files to a browser will have negative perf impact, as all files have to be downloaded. especially in mobile apps. So we need to have fewer requests to load files
