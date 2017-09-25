@@ -11,3 +11,7 @@ problems with splitting JS files
 
 - how the files are to be loaded? in which order? based on dependencies on different files. This order needs to be maintained every time our app runs.
 - Also loading all these files to a browser will have negative perf impact, as all files have to be downloaded. especially in mobile apps. So we need to have fewer requests to load files
+
+- Webpack can be used to solve these issues. **Webpack takes all these small files and converts to a one big file, while maintaing the order**.
+
+- Webpack can handle things like css preprocessing, ugigy etc. But these are sub tasks. Main task is one given above.
