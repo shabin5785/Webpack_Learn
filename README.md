@@ -15,3 +15,10 @@ problems with splitting JS files
 - Webpack can be used to solve these issues. **Webpack takes all these small files and converts to a one big file, while maintaing the order**.
 
 - Webpack can handle things like css preprocessing, ugigy etc. But these are sub tasks. Main task is one given above.
+
+**Webpack Basics**
+
+- In JS each separate file has its own scope. So we cannto access fns of one file from another. WE use module systems to link the file or inter communicate. There are many systems, 3 of the common are
+- commonJs : Implemented in nodeJS,  require and module.exports
+- AMD : more commonly implemented in front end apps, define and require
+- ES2015: import and export
