@@ -50,8 +50,10 @@ Now we need to tell babel which type of conversion is needed. For this we create
 
 - no auto build jobs for WP can respond to changes in WP config file. So have to manually rebuild them if we change config file...
 
-- one more loader is for css. We need css loader to load the css files , as WP cannot do that by itself. Next we need style loader to work with the loaded files.
+- one more loader is for css. We need css loader to load the css files , as WP cannot do that by itself. Next we need style loader to work with the loaded files. css loader just copies css contents to bundle.js and then style loader injects these to the files requried. 
 
 - in loader or rule, the use can be an array of loaders. so that the files pass thrugh all required loaders. the order is the order of elements in the use array, whihc is Right to Left
+
+- 
 
 
