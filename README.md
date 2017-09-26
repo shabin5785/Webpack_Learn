@@ -45,3 +45,5 @@ Babel has 3 separate libraries: babel-loader to work with WP, babel-core to take
 
 - each rule takes a use property to denote which loader and then a test property to select the files to be acted on, this can be a regex. So the given loader is applied to all files that matches the test expression. 
 Now we need to tell babel which type of conversion is needed. For this we create a .babelrc file and give the preset to be used within that.
+
+- WP will not automatically add js files to the build. Those files needs to be imported in atleast one file in the build path.
