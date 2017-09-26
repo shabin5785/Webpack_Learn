@@ -43,4 +43,4 @@ Babel has 3 separate libraries: babel-loader to work with WP, babel-core to take
 
 - we can have different loaders or rules within WP config. So rules is an array to take a number of loaders .
 
-- each rule takes a use property to denote which loader and then a test property to select the files to be acted on, this can be a regex.
+- each rule takes a use property to denote which loader and then a test property to select the files to be acted on, this can be a regex. So the given loader is applied to all files that matches the test expression.
