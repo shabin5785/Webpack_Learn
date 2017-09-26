@@ -39,4 +39,6 @@ Babel has 3 separate libraries: babel-loader to work with WP, babel-core to take
 
 - for each loader we need to tell which files it need to act up on. like only js files or css files.
 
-- in WP 1, we use loaders inside config file, but in WP2, we use rules within module option.
+- in WP 1, we use loaders inside config file, but in WP2, we use rules within module option. Same thing but different config syntax.
+
+- we can have different loaders or rules within WP config.
