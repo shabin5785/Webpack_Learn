@@ -49,3 +49,5 @@ Now we need to tell babel which type of conversion is needed. For this we create
 - WP will not automatically add js files to the build. Those files needs to be imported in atleast one file in the build hierarchy.
 
 - no auto build jobs for WP can respond to changes in WP config file. So have to manually rebuild them if we change config file...
+
+- one more loader is for css. We need css loader to load the css files , as WP cannot do that by itself. Next we need style loader to work with the loaded files.
