@@ -26,6 +26,8 @@ problems with splitting JS files
 - webpack.config.js -> webpack will automatically look for this config file when it runs.
 - entry in config : the file which starts with bootstrap or the startup file. usually index.js . Usually this file does not export anything. Webpack will start its work with impports in the entry file contents.
 
--output property: tell WP where to save the processed files and how to name it. It has path where output file to be saved and filename is the output file name. The path is an absolute path
+-output property: tell WP where to save the processed files and how to name it. It has path where output file to be saved and filename is the output file name. The path is an absolute path or fully qualified path
 
 -above two are bare minimum needed for WP
+
+- WP config files can import or require other modules like node modules and use it. WP runs in nodejs env, so we can use node modules within WP
