@@ -22,3 +22,5 @@ problems with splitting JS files
 - commonJs : Implemented in nodeJS,  require and module.exports
 - AMD : more commonly implemented in front end apps, define and require
 - ES2015: import and export
+
+- webpack.config.js -> webpack will automatically look for this config file when it runs.
