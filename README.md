@@ -24,3 +24,8 @@ problems with splitting JS files
 - ES2015: import and export
 
 - webpack.config.js -> webpack will automatically look for this config file when it runs.
+- entry in config : the file which starts with bootstrap or the startup file. usually index.js . Usually this file does not export anything. Webpack will start its work with impports in the entry file contents.
+
+-output property: tell WP where to save the processed files and how to name it. It has path where output file to be saved and filename is the output file name
+
+-above two are bare minimum needed for WP
