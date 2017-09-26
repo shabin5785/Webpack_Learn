@@ -37,4 +37,6 @@ problems with splitting JS files
 - WP can have different loaders to handle assets. One of them is babel to convert ES2015 code. Babel turns ES2015 to ES5 code and then WP links them
 Babel has 3 separate libraries: babel-loader to work with WP, babel-core to take some file ans parse it based on rules and generate it. The third is required to make babel aware of ES2015 as till now its generic. So we use babel-preset-env for this, which provide teh conversion rules for ES2015
 
-- for each loader we need to tell which files it need to act up on.
+- for each loader we need to tell which files it need to act up on. like only js files or css files.
+
+- in WP 1, we use loaders inside config file, but in WP2, we use rules within module option.
