@@ -41,4 +41,6 @@ Babel has 3 separate libraries: babel-loader to work with WP, babel-core to take
 
 - in WP 1, we use loaders inside config file, but in WP2, we use rules within module option. Same thing but different config syntax.
 
-- we can have different loaders or rules within WP config.
+- we can have different loaders or rules within WP config. So rules is an array to take a number of loaders .
+
+- each rule takes a use property to denote which loader and then a test property to select the files to be acted on, this can be a regex.
