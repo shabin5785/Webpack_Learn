@@ -55,3 +55,7 @@ Now we need to tell babel which type of conversion is needed. For this we create
 - in loader or rule, the use can be an array of loaders. so that the files pass thrugh all required loaders. the order is the order of elements in the use array, whihc is Right to Left
 
 -Saving css files into a single file is not correct. So we can use another module in webpack, that can take output of any webpack module and extract it to a separate file. So we can link this to the outut of css module and then separate the processed css data to a separate file.
+
+- use and loader are nearly identical. But due to developmet in webpack, some pluings use one of them only.
+
+- loaders and plugin are different in WP. Loaders are used to do preprocessing in WP before bundling them. Plugins on other hand can process files and preent them from being included in bundle.
