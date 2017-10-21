@@ -65,3 +65,5 @@ Now we need to tell babel which type of conversion is needed. For this we create
 - within a rule, the use property can be an array. The loader in array are applie from right to left. So we can combine the loaders on a rule and be applied one after another to a set of files.
 
 - url loader prepends the filename it created with publicpath. So if we omit public path, the url for images to be loaded might be wrong. Confusing part is that urlloader takes the public path value from webpak config. not from its own config. May be to keep the public path common..
+
+- The public path variable will be used by any loader that produces a file as relateive to a folder.
