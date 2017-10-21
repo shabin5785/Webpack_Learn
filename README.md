@@ -61,3 +61,5 @@ Now we need to tell babel which type of conversion is needed. For this we create
 - loaders and plugin are different in WP. Loaders are used to do preprocessing in WP before bundling them. Plugins on other hand can process files and preent them from being included in bundle.
 
 - another couple of loaders in WP is for image processing. A good example of loaders . One loader can be used to automatically compress images in out project and other to include it in file. The second loader and decide to embed image as data in file or raw image frmo location based on image size.
+
+- within a rule, the use property can be an array. The loader in array are applie from right to left. So we can combine the loaders on a rule and be applied one after another to a set of files.
