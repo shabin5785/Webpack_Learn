@@ -73,3 +73,5 @@ Now we need to tell babel which type of conversion is needed. For this we create
 
 THis allows WP to split output files to multiple files.. instead of a single bundle.js. Then we can programetically choose which file to load. This shld reduce the overhead of loading large files.
 We can do this by using System.import and load the module based on that. WP can then split bundle js to load as chunkgs.
+
+The sytem modules loaded like this has a single method default(), that contains the code to inject and execute the module.
