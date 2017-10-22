@@ -67,3 +67,9 @@ Now we need to tell babel which type of conversion is needed. For this we create
 - url loader prepends the filename it created with publicpath. So if we omit public path, the url for images to be loaded might be wrong. Confusing part is that urlloader takes the public path value from webpak config. not from its own config. May be to keep the public path common..
 
 - The public path variable will be used by any loader that produces a file as relateive to a folder.
+
+
+**CodeSplitting**
+
+THis allows WP to split output files to multiple files.. instead of a single bundle.js. Then we can programetically choose which file to load. This shld reduce the overhead of loading large files.
+We can do this by using System.import and load the module based on that. WP can then split bundle js to load as chunkgs.
