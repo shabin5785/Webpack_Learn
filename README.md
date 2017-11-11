@@ -80,3 +80,5 @@ The sytem modules loaded like this has a single method default(), that contains 
 - babel will need different preset for different languages. Basic is for es15 or 16. Need separate for react or other languages.
 
 - Using webpack we can split our code and vendor code like React or Angular and load it separate. So we can load the vendor code only once at startup and increase app speed. So when we update our app, browser need to download only our app. No need to download the entire vendor code as well.. this saves time..
+
+- Preferably use code split using System.import when we split our app code. When we need to split our and vendor code, do it inside webpack.
