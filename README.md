@@ -84,3 +84,11 @@ The sytem modules loaded like this has a single method default(), that contains 
 - Preferably use code split using System.import when we split our app code. When we need to split our and vendor code, do it inside webpack.
 
 - we can specify what bundle.js has inside entry proeprty of webpack. So we can split the bundle. we can add other property inside entry section, to produce multiple bundles.. so we make a new entry inside entry (!) and name it say vendor.js or v.js and add all dependencies from package.json to that, so that its bundled togetehr.
+
+- just specifying a separate bundle will not split the code. We still be importing the libraries in our code. We need to fix this. So to avoid the duplicate imports, we can use a plugin commons chunk plugin. Now even if we import libraries that we seperated out in our webpack, into our code, it wont be included in the bundle of our code.
+
+- to the plugin we give a bundle name.. like the library bundle. Now the plugin ensures taht only once these libraries are included.
+
+- we can do same strategy for our code as well. Like split frequently changing code and not changing code to separate bundles. But if user clears cache, then everything will be downloaded again.
+
+
