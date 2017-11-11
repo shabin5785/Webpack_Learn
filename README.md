@@ -93,3 +93,7 @@ The sytem modules loaded like this has a single method default(), that contains 
 
 
 - now usually we include the base bundle in our html file. We are not including all split bundles. INcluding them manually is diffcult. We have a webpack plugin, that can look for the bundles and inject them to our html file.
+
+- we give the html doc to the plugin config, so that it can inject scripts to it.
+
+- the plugin takes the html files, injects scripts and then creates a new html file in dist directory with the scripts included.
