@@ -92,3 +92,4 @@ The sytem modules loaded like this has a single method default(), that contains 
 - we can do same strategy for our code as well. Like split frequently changing code and not changing code to separate bundles. But if user clears cache, then everything will be downloaded again.
 
 
+- now usually we include the base bundle in our html file. We are not including all split bundles. INcluding them manually is diffcult. We have a webpack plugin, that can look for the bundles and inject them to our html file.
