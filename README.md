@@ -106,4 +106,4 @@ The sytem modules loaded like this has a single method default(), that contains 
 
 - the hash appended files are automaticaly injected to teh html file when hash name changes.
 
-- every build , now with chunk hash name, causes a new file to be added to dist directory (our code mainy and vendor wen we change it). This fills up dist with all build files and bundles. We can use a plugin called rim-raf to clear the directory. Like clear files .
+- every build , now with chunk hash name, causes a new file to be added to dist directory (our code mainy and vendor wen we change it). This fills up dist with all build files and bundles. We can use a plugin called rim-raf to clear the directory. Like clear files . We addd to package json, and assign a job to it.
