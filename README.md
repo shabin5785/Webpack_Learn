@@ -103,3 +103,5 @@ The sytem modules loaded like this has a single method default(), that contains 
 - we need to include the manifest js option to the commons chunk plugin. THis help brpwser decide if a fiel has been changed or not. Else every time we update our code, the chhunk plugin will think vendor libs is changed as well. THis is due to the hash name index we added above. That solution creates this problem. so use manifes to avoid it.
 
 - the hash name of a file is dependant on the file content. So even a character change causes a new hash, leading to a new name , causing a refresh.
+
+- the hash appended files are automaticaly injected to teh html file when hash name changes.
