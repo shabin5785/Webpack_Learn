@@ -75,3 +75,6 @@ THis allows WP to split output files to multiple files.. instead of a single bun
 We can do this by using System.import and load the module based on that. WP can then split bundle js to load as chunkgs.
 
 The sytem modules loaded like this has a single method default(), that contains the code to inject and execute the module.
+
+
+- babel will need different preset for different languages. Basic is for es15 or 16. Need separate for react or other languages.
