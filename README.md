@@ -114,4 +114,6 @@ The sytem modules loaded like this has a single method default(), that contains 
 
 - webpack dev server is intermediate between webpacj output and browser. It automates all manual actions, like build, refresh etc when we cahnge files. So this autoamtes teh build and refreshes the browser automatically. It updates only the changed files or js. Also it automatically loads the html page to browser.
 
-- the WP dev server, is client side only. It only loads and refreshes pages, and listenes for changes. We cannot add any logic to WP dev server, like access database.
+- the WP dev server, is client side only. It only loads and refreshes pages, and listenes for changes. We cannot add any logic to WP dev server, like access database. We need to use a node server for this. How can we combine the node server with WP server?
+
+- if we change WP congig, WP server needs to be restarted
