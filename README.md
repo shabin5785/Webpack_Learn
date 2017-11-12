@@ -158,4 +158,5 @@ The sytem modules loaded like this has a single method default(), that contains 
 
 - we then add the middelware to teh express server ( or any server like that). to express server, we pass teh WP middleware, to that we give the WP app and to that we pass our config object for WP.(!!!)
 
+- no config is needed in the WP config file.. only the midleware config.. here WP runs inside our node server.
 
