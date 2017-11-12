@@ -130,4 +130,4 @@ The sytem modules loaded like this has a single method default(), that contains 
 -static asset providers: Amazon s3, azure, surge, digital ocean, github
 -dyanmic : Amazon ELB, Amazon Ec2, digital ocean , heroku , azure
 
-- we can define WP config in a plugin and the app like react or angular will look for its value. like setting env to prod or dev.
+- we can define WP config or global variables in a plugin and the app like react or angular will look for its value. like setting env to prod or dev. The WP define plugin is used to decalre global or window scoped variables.
