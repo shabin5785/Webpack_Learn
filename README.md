@@ -117,3 +117,5 @@ The sytem modules loaded like this has a single method default(), that contains 
 - the WP dev server, is client side only. It only loads and refreshes pages, and listenes for changes. We cannot add any logic to WP dev server, like access database. We need to use a node server for this. How can we combine the node server with WP server?
 
 - if we change WP congig, WP server needs to be restarted
+
+- WP dev server, builds and keep files in its memory. it wont save build to drive. So even if delete the dist folder and then run WP dev server, the build will be done and the page loads. But dist is not created. WP serves page from in memory. So use WP dev server only for development.nt production.
