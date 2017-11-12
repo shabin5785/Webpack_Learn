@@ -162,3 +162,6 @@ The sytem modules loaded like this has a single method default(), that contains 
 
 
 - in prod we dont need the WP middle ware. So for prod, we control the middle ware with a if statement and enabel it only if its  not prod env.
+
+- we can put require statement as well inside the if .. like WP middleware and config is used only when not in prod...
+
