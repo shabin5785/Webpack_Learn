@@ -119,3 +119,15 @@ The sytem modules loaded like this has a single method default(), that contains 
 - if we change WP congig, WP server needs to be restarted
 
 - WP dev server, builds and keep files in its memory. it wont save build to drive. So even if delete the dist folder and then run WP dev server, the build will be done and the page loads. But dist is not created. WP serves page from in memory. So use WP dev server only for development.nt production.
+
+- by default WP servers static files. Not the dynamic pages, like based on the api output. Entire WP app runs in the browser, served from WP memory.
+
+**Production Deploy**
+
+
+-for real apps, we need a server between code, and browser like node or rails. the middle server can server WP static content and the dynamic content.
+
+-static asset providers: Amazon s3, azure, surge, digital ocean, github
+-dyanmic : Amazon ELB, Amazon Ec2, digital ocean , heroku , azure
+
+- we can define WP config in a plugin and the app like react or angular will look for its value. like setting env to prod or dev.
