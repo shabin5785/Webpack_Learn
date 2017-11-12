@@ -142,3 +142,20 @@ The sytem modules loaded like this has a single method default(), that contains 
 - second is a single server, like node, that has everythign. The WP based static app will be inside the backend app. the Real server will have a route handler or servelt to route requests to WP static pages or login requests or api calls. The backend server is 100% in control here. Suitable for small apps
 
 -  Second setup causes problem for WP. as say Node server is in control of everything, and not WP. so WP needs to be made compatable with WP server. So both Real server like Node and WP needs to talk and interact with each other.
+
+**Node and WP Integration**
+- this setup is different for dev and prod
+
+- in dev, node installs a WP middleware and passes requests to the backend WP server. here instead of node serving static pages, request is hanlded by WP.
+
+- in prod, WP is not run at all, as it is a resouce hog. So we need to build our app only once with WP. THen we ask the node server to serve these static pages build by WP with the node server handling our requests. Here there is no WP middle ware.
+
+- so in prod there is no WP serer running in backend, building and watchign files. ONly the built app is used.
+
+- a middleare is used to modify and handle the requests coming to server. so Middleware will intercept the request for a page and will serve the correct page.
+
+- for WP middleware to intercept, we install the WP middleware, then use that with webpack library and our webpack config to intercept and handle the requests.
+
+- we then add the middelware to teh express server ( or any server like that). to express server, we pass teh WP middleware, to that we give the WP app and to that we pass our config object for WP.(!!!)
+
+
