@@ -170,3 +170,5 @@ The sytem modules loaded like this has a single method default(), that contains 
 - remember to set teh env variable for prod or not befor e starting the server.
 
 - for handling other routes, we need to declare the normal route handlers for node, but importantly above the static page route definituon. 
+
+- we may need to set the port definition to the env variable as well.
