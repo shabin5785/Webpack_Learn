@@ -160,3 +160,5 @@ The sytem modules loaded like this has a single method default(), that contains 
 
 - no config is needed in the WP config file.. only the midleware config.. here WP runs inside our node server. We get all benefits of a separate WP server here as well. like auto rebuild and things like that, but now runnig inside node, with node handling all requests.
 
+
+- in prod we dont need the WP middle ware. So for prod, we control the middle ware with a if statement and enabel it only if its  not prod env.
