@@ -168,3 +168,5 @@ The sytem modules loaded like this has a single method default(), that contains 
 - in prod, we set the static dir of express inside node to the WP build folder, like dist. we run the build for WP. and thats it. node will serve the pages from dist...
 
 - remember to set teh env variable for prod or not befor e starting the server.
+
+- for handling other routes, we need to declare the normal route handlers for node, but importantly above the static page route definituon. 
