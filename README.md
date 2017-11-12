@@ -165,3 +165,4 @@ The sytem modules loaded like this has a single method default(), that contains 
 
 - we can put require statement as well inside the if .. like WP middleware and config is used only when not in prod...
 
+- in prod, we set the static dir of express inside node to the WP build folder, like dist.
