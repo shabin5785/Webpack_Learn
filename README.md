@@ -171,4 +171,4 @@ The sytem modules loaded like this has a single method default(), that contains 
 
 - for handling other routes, we need to declare the normal route handlers for node, but importantly above the static page route definituon. 
 
-- we may need to set the port definition to the env variable as well.
+- we may need to set the port definition to the env variable as well, as many deployment proivders dont allow our ports to be used.
