@@ -131,3 +131,5 @@ The sytem modules loaded like this has a single method default(), that contains 
 -dyanmic : Amazon ELB, Amazon Ec2, digital ocean , heroku , azure
 
 - we can define WP config or global variables in a plugin and the app like react or angular will look for its value. like setting env to prod or dev. The WP define plugin is used to decalre global or window scoped variables.
+
+- we can also pass config to webpack command, like -p. So WP runs in prod mode. causing files to be minimified. We can set the WP config or window scoped variables that we declared in define plugin, in the build section.
