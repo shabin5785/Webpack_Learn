@@ -109,3 +109,9 @@ The sytem modules loaded like this has a single method default(), that contains 
 - every build , now with chunk hash name, causes a new file to be added to dist directory (our code mainy and vendor wen we change it). This fills up dist with all build files and bundles. We can use a plugin called rim-raf to clear the directory. Like clear files . We addd to package json, and assign a job to it.
 
 - we can run clean job before the build, so that dist is cleared before each build.
+
+**Webpack Dev server**
+
+- webpack dev server is intermediate between webpacj output and browser. It automates all manual actions, like build, refresh etc when we cahnge files. So this autoamtes teh build and refreshes the browser automatically. It updates only the changed files or js. Also it automatically loads the html page to browser.
+
+- the WP dev server, is client side only. It only loads and refreshes pages, and listenes for changes. We cannot add any logic to WP dev server, like access database.
