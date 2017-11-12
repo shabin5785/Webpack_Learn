@@ -133,3 +133,12 @@ The sytem modules loaded like this has a single method default(), that contains 
 - we can define WP config or global variables in a plugin and the app like react or angular will look for its value. like setting env to prod or dev. The WP define plugin is used to decalre global or window scoped variables.
 
 - we can also pass config to webpack command, like -p. So WP runs in prod mode. causing files to be minimified. We can set the WP config or window scoped variables that we declared in define plugin, in the build section.
+
+
+**Real world App**
+
+- there are two strategies to deploy an app with WP and a backend server. One we can have two separate address, one with WP serving static address and other with a server like node servign dynamic content. SO the static app from WP can make requests to the dynamic app using API calls. But these are separate servers. This is how large apps work, as static pages are seaprate and traffic to api are limited. Performance benefits.
+
+- second is a single server, like node, that has everythign. The WP based static app will be inside the backend app. the Real server will have a route handler or servelt to route requests to WP static pages or login requests or api calls. The backend server is 100% in control here. Suitable for small apps
+
+-  Second setup causes problem for WP. as say Node server is in control of everything, and not WP. so WP needs to be made compatable with WP server. So both Real server like Node and WP needs to talk and interact with each other.
